@@ -22,7 +22,7 @@ public class Main {
 
     }
 
-    public static void setTheMobileApp(int clientOs, int clientDeviceYear) {
+    public static void printTheMobileApp(int clientOs, int clientDeviceYear) {
 
         if (clientOs == 0 && clientDeviceYear == 2022) {
             System.out.println("Установите приложение для IOS по ссылке.");
@@ -37,7 +37,8 @@ public class Main {
     }
 
 
-    public static void printTheTotalDeliveryDays(int days, int deliveryDistance) {
+    public static void printTheTotalDeliveryDays(int deliveryDistance) {
+        int days = 1;
         if (deliveryDistance <= 20) {
             System.out.println("Потребуется дней: " + days);
         }
@@ -60,12 +61,11 @@ public class Main {
         System.out.println("Задача 2");
         int clientDeviceYear = 2019;
         int clientOs = 1;
-        setTheMobileApp(clientOs, clientDeviceYear);
+        printTheMobileApp(clientOs, clientDeviceYear);
 
         System.out.println("Задача 3");
         int deliveryDistance = 50;
-        int days = 1;
-        printTheTotalDeliveryDays(days, deliveryDistance);
+        printTheTotalDeliveryDays(deliveryDistance);
 
 
     }
